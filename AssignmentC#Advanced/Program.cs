@@ -130,6 +130,28 @@ namespace AssignmentC_Advanced
         //    }
 
         #endregion
+        #region Question10
+        //        Q10: What is an Interface Constraint?
+        //An interface constraint forces the generic type to implement a specific interface.
+
+
+        //public interface IPrintable
+        //        {
+        //            void Print();
+        //        }
+
+        //        public class Printer<T> where T : IPrintable
+        //        {
+        //          public void Print(T item)
+        //            {
+        //                item.Print();
+
+        //            }
+        //        }
+        #endregion
+
+
+
     }
 
 
