@@ -149,7 +149,27 @@ namespace AssignmentC_Advanced
         //            }
         //        }
         #endregion
+        #region Question11
+        //        Q11: What is the Base Class Constraint?
+        //A base class constraint requires the generic type to inherit from a specific base class.
+        //This ensures that the generic type has the properties and methods of that base class.
+        //            public class Animal
+        //        {
+        //            public void Eat()
+        //            {
+        //                Console.WriteLine("Animal is eating");
+        //            }
+        //        }
 
+        //        public class Cage<T> where T : Animal
+        //        {
+        //            public void Feed(T animal)
+        //            {
+        //                animal.Eat();
+        //            }
+        //        }
+
+        #endregion
 
 
     }
