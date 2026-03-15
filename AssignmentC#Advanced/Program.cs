@@ -116,7 +116,20 @@ namespace AssignmentC_Advanced
         //            public T Item;
         //        }
         #endregion
+        #region Question09
+        //        Q9: What is the new () Constraint?
 
+        //The new () constraint requires that the generic type must have a public parameterless constructor
+        //            so the class can create an object using new.
+        //        public class ObjectFactory<T> where T : new()
+        //    {
+        //        public T Create()
+        //        {
+        //            return new T();
+        //        }
+        //    }
+
+        #endregion
     }
 
 
