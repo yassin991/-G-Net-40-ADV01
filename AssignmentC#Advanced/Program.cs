@@ -182,7 +182,18 @@ namespace AssignmentC_Advanced
         //    }
         //}
         #endregion
+        #region Question13
+        //        Q13: What Does the default Keyword Do in Generics?
 
+        //The default keyword returns the default value of a type.
+        //            0 for numeric types (int, double)
+
+        //false for bool
+
+        //null for reference types (string, objects)
+
+
+        #endregion
 
     }
 
