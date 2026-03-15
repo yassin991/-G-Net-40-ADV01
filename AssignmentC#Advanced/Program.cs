@@ -218,7 +218,17 @@ namespace AssignmentC_Advanced
         //    }
         //}
         #endregion
+        #region Question15
+        //        Q15: What is Covariance? Explain the out keyword.
+        //Covariance allows you to use a more derived type than the one originally specified.
+        //The out keyword is used in generic interfaces or delegates to indicate that the type parameter is covariant
+        //    meaning it is only used for returning values (output).
+        //    public interface IProducer<out T>
+        //        {
+        //            T Produce();
+        //        }
 
+        #endregion
 
 
 
