@@ -170,6 +170,18 @@ namespace AssignmentC_Advanced
         //        }
 
         #endregion
+        #region Question12
+        //Q12: How do you apply multiple constraints? Write an example.
+        //    You can apply multiple constraints by separating them with commas after where.
+
+        //    public class Example<T> where T : class, IComparable, new()
+        //{
+        //    public T CreateObject()
+        //    {
+        //        return new T();
+        //    }
+        //}
+        #endregion
 
 
     }
