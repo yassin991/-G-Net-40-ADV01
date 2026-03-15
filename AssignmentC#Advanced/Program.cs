@@ -239,6 +239,18 @@ namespace AssignmentC_Advanced
         //        }
         #endregion
 
+        #region Question17
+        //        Covariance(out)
+        //Allows a more derived type to be used.
+        //Used when the generic type is returned from a method.
+        //The type parameter is marked with the out keyword.
+
+        ///////////////////////////////////////////////////////////////////////
+        //Contravariance (in)
+        //Allows a base type to be used instead of a derived type.
+        //Used when the generic type is passed as a method parameter.
+        //The type parameter is marked with the in keyword.
+        #endregion
 
 
     }
