@@ -108,7 +108,14 @@ namespace AssignmentC_Advanced
         //            public T Value;
         //        }
         #endregion
-
+        #region Question08
+        //        Q8: What is the class Constraint?
+        //The class constraint restricts the generic type to reference types only(like string, objects, classes).
+        //public class ReferenceContainer<T> where T : class
+        //        {
+        //            public T Item;
+        //        }
+        #endregion
 
     }
 
