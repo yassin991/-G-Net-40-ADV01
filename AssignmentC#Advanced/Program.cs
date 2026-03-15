@@ -229,7 +229,15 @@ namespace AssignmentC_Advanced
         //        }
 
         #endregion
-
+        #region Question16
+        //        Q16: What is Contravariance? Explain the in keyword.
+        //Contravariance allows you to use a less derived type than the one originally specified.
+        //The in keyword means the type parameter is used only as input parameters.
+        //    public interface IConsumer<in T>
+        //        {
+        //            void Consume(T item);
+        //        }
+        #endregion
 
 
 
