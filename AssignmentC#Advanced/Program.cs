@@ -267,7 +267,17 @@ namespace AssignmentC_Advanced
 
         //Counter<int> and Counter<string> each have their own static field.
         #endregion
+        #region Question19
+        //How Can You Inherit from a Generic Class?
+        //    public class BaseClass<T>
+        //{
+        //    public T Value;
+        //}
 
+        //public class DerivedClass<T> : BaseClass<T>
+        //{
+        //}
+        #endregion
 
     }
 
