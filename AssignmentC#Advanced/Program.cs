@@ -238,7 +238,6 @@ namespace AssignmentC_Advanced
         //            void Consume(T item);
         //        }
         #endregion
-
         #region Question17
         //        Covariance(out)
         //Allows a more derived type to be used.
@@ -250,6 +249,23 @@ namespace AssignmentC_Advanced
         //Allows a base type to be used instead of a derived type.
         //Used when the generic type is passed as a method parameter.
         //The type parameter is marked with the in keyword.
+        #endregion
+        #region Question18
+        //       Q18: How Do Static Members Work in Generic Types?
+
+        //static members are created separately for each closed generic type.
+
+        //           public class Counter<T>
+        //       {
+        //           public static int Count;
+
+        //           public Counter()
+        //           {
+        //               Count++;
+        //           }
+        //       }
+
+        //Counter<int> and Counter<string> each have their own static field.
         #endregion
 
 
