@@ -75,7 +75,6 @@ namespace AssignmentC_Advanced
         //}
 
         #endregion
-
         #region Question05
         //Q5: Write a generic method FindMax<T> that finds maximum value
         //    public static T FindMax<T>(T a, T b) where T : IComparable<T>
@@ -89,6 +88,16 @@ namespace AssignmentC_Advanced
         //int max = FindMax(10, 20);
         //Console.WriteLine(max);
 
+        #endregion
+        #region Question06
+        //Q6: What is a Generic Interface?
+        //    A generic interface is an interface that uses a type parameter so it can work with different data types.
+        //public interface IRepository<T>
+        //{
+        //    void add(T item);
+        //    void delete(T item);
+        //    T Get(int id);
+        //}
         #endregion
 
 
