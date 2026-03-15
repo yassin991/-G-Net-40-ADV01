@@ -15,7 +15,14 @@ namespace AssignmentC_Advanced
     internal class Program
     {
         static void Main(string[] args){ }
-      
+        #region Qestion01
+        //            What is a Generic Class?
+        //A generic class is a class that is defined with a type parameter instead of a specific data type.
+        //This allows the same class to work with different data types without rewriting the code.
+
+        //            Why Use Generics?
+        //            Code Reusability,Type Safety, Better Performance,Cleaner and Maintainable Code.
+        #endregion
 
 
     }
