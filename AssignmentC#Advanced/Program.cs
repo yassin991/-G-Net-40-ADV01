@@ -15,9 +15,315 @@ namespace AssignmentC_Advanced
     internal class Program
     {
         static void Main(string[] args){ }
-      
+        #region Qestion01
+        //            What is a Generic Class?
+        //A generic class is a class that is defined with a type parameter instead of a specific data type.
+        //This allows the same class to work with different data types without rewriting the code.
+
+        //            Why Use Generics?
+        //            Code Reusability,Type Safety, Better Performance,Cleaner and Maintainable Code.
+        #endregion
+        #region Question02
+
+        //Q2: Write a generic class Container<T> with Add and Get methods.
+        //            Public class Container<T> 
+        //        {
+        //            public T item;
+        //            public void Add(T value)
+        //            {
+        //                item = value;
+        //            }
+        //            public T Get()
+        //            {
+        //               return item;
+        //            }
+
+        //        }
+        #endregion
+        #region Question03
+        //        Q3: What are multiple type parameters? Write Pair<TKey, TValue>.
+        //Multiple type parameters mean a generic class or method can use more than one placeholder type.
+        //This allows the class to work with two or more different data types at the same time.
+
+        //    Public class Pair <TKey,TValue>
+        //{
+        //    public TKey Key;    
+        //    public TValue Value;
+
+        //    public Pair(TKey key, TValue value)
+        //    {
+        //        Key = key;
+        //        Value = value;
+        //    }
+        //    public void Display()
+        //    {
+        //        Console.WriteLine($"Key::{Key},Value::{Value}");
+        //    }
+        //}
+
+        #endregion
+        #region Question04
+        //Q4: What is a generic method? Write Swap<T> method.
+        //   A generic method is a method that uses a type parameter 
+        //   so it can work with different data types without rewriting the method for each type.
+
+        //    public static void Swap<T>(ref T a, ref T b)
+        //{
+        //    T temp = a;
+        //    a = b;
+        //    b = temp;
+        //}
+
+        #endregion
+        #region Question05
+        //Q5: Write a generic method FindMax<T> that finds maximum value
+        //    public static T FindMax<T>(T a, T b) where T : IComparable<T>
+        //{
+        //    if (a.CompareTo(b) > 0)
+        //        return a;
+        //    else
+        //        return b;
+
+        //}
+        //int max = FindMax(10, 20);
+        //Console.WriteLine(max);
+
+        #endregion
+        #region Question06
+        //Q6: What is a Generic Interface?
+        //    A generic interface is an interface that uses a type parameter so it can work with different data types.
+        //public interface IRepository<T>
+        //{
+        //    void add(T item);
+        //    void delete(T item);
+        //    T Get(int id);
+        //}
+        #endregion
+        #region Question07
+        //        Q7: What is the struct Constraint?
+        //The struct constraint restricts the generic type to value types only(like int, double, DateTime).
+
+        //public class ValueContainer<T> where T : struct
+        //        {
+        //            public T Value;
+        //        }
+        #endregion
+        #region Question08
+        //        Q8: What is the class Constraint?
+        //The class constraint restricts the generic type to reference types only(like string, objects, classes).
+        //public class ReferenceContainer<T> where T : class
+        //        {
+        //            public T Item;
+        //        }
+        #endregion
+        #region Question09
+        //        Q9: What is the new () Constraint?
+
+        //The new () constraint requires that the generic type must have a public parameterless constructor
+        //            so the class can create an object using new.
+        //        public class ObjectFactory<T> where T : new()
+        //    {
+        //        public T Create()
+        //        {
+        //            return new T();
+        //        }
+        //    }
+
+        #endregion
+        #region Question10
+        //        Q10: What is an Interface Constraint?
+        //An interface constraint forces the generic type to implement a specific interface.
 
 
+        //public interface IPrintable
+        //        {
+        //            void Print();
+        //        }
+
+        //        public class Printer<T> where T : IPrintable
+        //        {
+        //          public void Print(T item)
+        //            {
+        //                item.Print();
+
+        //            }
+        //        }
+        #endregion
+        #region Question11
+        //        Q11: What is the Base Class Constraint?
+        //A base class constraint requires the generic type to inherit from a specific base class.
+        //This ensures that the generic type has the properties and methods of that base class.
+        //            public class Animal
+        //        {
+        //            public void Eat()
+        //            {
+        //                Console.WriteLine("Animal is eating");
+        //            }
+        //        }
+
+        //        public class Cage<T> where T : Animal
+        //        {
+        //            public void Feed(T animal)
+        //            {
+        //                animal.Eat();
+        //            }
+        //        }
+
+        #endregion
+        #region Question12
+        //Q12: How do you apply multiple constraints? Write an example.
+        //    You can apply multiple constraints by separating them with commas after where.
+
+        //    public class Example<T> where T : class, IComparable, new()
+        //{
+        //    public T CreateObject()
+        //    {
+        //        return new T();
+        //    }
+        //}
+        #endregion
+        #region Question13
+        //        Q13: What Does the default Keyword Do in Generics?
+
+        //The default keyword returns the default value of a type.
+        //            0 for numeric types (int, double)
+
+        //false for bool
+
+        //null for reference types (string, objects)
+
+
+        #endregion
+        #region Question14
+        //Q14: Write SafeList<T> That Returns Default When Index Is Invalid
+        //public class SafeList<T>
+        //{
+        //    private List<T> items = new List<T>();
+
+        //    public void Add(T item)
+        //    {
+        //        items.Add(item);
+        //    }
+
+        //    public T Get(int index)
+        //    {
+        //        if (index >= 0 && index < items.Count)
+        //        {
+        //            return items[index];
+        //        }
+        //        else
+        //        {
+        //            return default(T);
+        //        }
+        //    }
+        //}
+        #endregion
+        #region Question15
+        //        Q15: What is Covariance? Explain the out keyword.
+        //Covariance allows you to use a more derived type than the one originally specified.
+        //The out keyword is used in generic interfaces or delegates to indicate that the type parameter is covariant
+        //    meaning it is only used for returning values (output).
+        //    public interface IProducer<out T>
+        //        {
+        //            T Produce();
+        //        }
+
+        #endregion
+        #region Question16
+        //        Q16: What is Contravariance? Explain the in keyword.
+        //Contravariance allows you to use a less derived type than the one originally specified.
+        //The in keyword means the type parameter is used only as input parameters.
+        //    public interface IConsumer<in T>
+        //        {
+        //            void Consume(T item);
+        //        }
+        #endregion
+        #region Question17
+        //        Covariance(out)
+        //Allows a more derived type to be used.
+        //Used when the generic type is returned from a method.
+        //The type parameter is marked with the out keyword.
+
+        ///////////////////////////////////////////////////////////////////////
+        //Contravariance (in)
+        //Allows a base type to be used instead of a derived type.
+        //Used when the generic type is passed as a method parameter.
+        //The type parameter is marked with the in keyword.
+        #endregion
+        #region Question18
+        //       Q18: How Do Static Members Work in Generic Types?
+
+        //static members are created separately for each closed generic type.
+
+        //           public class Counter<T>
+        //       {
+        //           public static int Count;
+
+        //           public Counter()
+        //           {
+        //               Count++;
+        //           }
+        //       }
+
+        //Counter<int> and Counter<string> each have their own static field.
+        #endregion
+        #region Question19
+        //How Can You Inherit from a Generic Class?
+        //    public class BaseClass<T>
+        //{
+        //    public T Value;
+        //}
+
+        //public class DerivedClass<T> : BaseClass<T>
+        //{
+        //}
+        #endregion
+        #region Question20
+        //public class Cache<TKey, TValue>
+        //{
+        //    private class CacheItem
+        //    {
+        //        public TValue Value;
+        //        public DateTime ExpirationTime;
+        //    }
+
+        //    private Dictionary<TKey, CacheItem> cache = new Dictionary<TKey, CacheItem>();
+
+        //    public void Add(TKey key, TValue value, TimeSpan duration)
+        //    {
+        //        cache[key] = new CacheItem
+        //        {
+        //            Value = value,
+        //            ExpirationTime = DateTime.Now.Add(duration)
+        //        };
+        //    }
+
+        //    public TValue Get(TKey key)
+        //    {
+        //        if (cache.ContainsKey(key))
+        //        {
+        //            var item = cache[key];
+
+        //            if (DateTime.Now <= item.ExpirationTime)
+        //                return item.Value;
+
+        //            cache.Remove(key);
+        //        }
+
+        //        return default(TValue);
+        //    }
+
+        //    public bool Contains(TKey key)
+        //    {
+        //        return cache.ContainsKey(key);
+        //    }
+
+        //    public void Remove(TKey key)
+        //    {
+        //        cache.Remove(key);
+        //    }
+        //}
+        #endregion
     }
 
 
