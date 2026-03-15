@@ -99,7 +99,15 @@ namespace AssignmentC_Advanced
         //    T Get(int id);
         //}
         #endregion
+        #region Question07
+        //        Q7: What is the struct Constraint?
+        //The struct constraint restricts the generic type to value types only(like int, double, DateTime).
 
+        //public class ValueContainer<T> where T : struct
+        //        {
+        //            public T Value;
+        //        }
+        #endregion
 
 
     }
