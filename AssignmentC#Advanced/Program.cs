@@ -23,7 +23,23 @@ namespace AssignmentC_Advanced
         //            Why Use Generics?
         //            Code Reusability,Type Safety, Better Performance,Cleaner and Maintainable Code.
         #endregion
+        #region Question02
 
+        //Q2: Write a generic class Container<T> with Add and Get methods.
+        //            Public class Container<T> 
+        //        {
+        //            public T item;
+        //            public void Add(T value)
+        //            {
+        //                item = value;
+        //            }
+        //            public T Get()
+        //            {
+        //               return item;
+        //            }
+
+        //        }
+        #endregion
 
     }
 
